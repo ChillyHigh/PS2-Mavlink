@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "link.h": "c",
+        "linkchassis.h": "c"
+    }
+}
