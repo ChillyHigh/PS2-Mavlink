@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<mavlink>
+  <version>3</version>
+  <messages>
+    <message id="1" name="COMMAND">
+      <description>Send Command to robo</description>
+      <field type="int8_t" name="Rocker_LX">value of left Rocker X</field>
+      <field type="int8_t" name="Rocker_LY">value of left Rocker Y</field>
+      <field type="int8_t" name="Rocker_RX">value of right Rocker X</field>
+      <field type="int8_t" name="Rocker_RY">value of right Rocker Y</field>
+      <!-- Rocker data above -->
+      <field type="uint8_t" name="L1">whether KEY L1 is pressed</field>
+      <field type="uint8_t" name="L2">whether KEY L2 is pressed</field>
+      <field type="uint8_t" name="R1">whether KEY R1 is pressed</field>
+      <field type="uint8_t" name="R2">whether KEY R2 is pressed</field>
+      <!-- Back Button above-->
+      <field type="uint8_t" name="L_Right">whether Left KEY right is pressed</field>
+      <field type="uint8_t" name="L_Left">whether Left KEY left is pressed</field>
+      <field type="uint8_t" name="L_Up">whether Left KEY up is pressed</field>
+      <field type="uint8_t" name="L_Down">whether Left KEY down is pressed</field>
+      <!-- Left Button above-->
+      <field type="uint8_t" name="R_Right">whether Right KEY right is pressed</field>
+      <field type="uint8_t" name="R_Left">whether Right KEY left is pressed</field>
+      <field type="uint8_t" name="R_Up">whether Right KEY up is pressed</field>
+      <field type="uint8_t" name="R_Down">whether Right KEY down is pressed</field>
+      <!-- Right Button above-->
+    </message>
+  </messages>
+</mavlink>

@@ -16,12 +16,10 @@ void executeCommand()
 {
     // TODO: 执行操作
     // motor(PS2.LX, PS2.LY);
-
-
-    //Debug
-    // char buf[50] = { 0 };
-    // sprintf(buf, "LX,LY:%d,%d\n", PS2.LX, PS2.LY);
-    // HAL_UART_Transmit_DMA(&DEBUG_UART, (uint8_t*)buf, sizeof(buf));
+    // Debug
+    char buf[50] = { 0 };
+    sprintf(buf, "LX,LY:%d,%d\n", PS2.LX, PS2.LY);
+    HAL_UART_Transmit_DMA(DEBUG_UART, (uint8_t*)buf, sizeof(buf));
 }
 
 /**

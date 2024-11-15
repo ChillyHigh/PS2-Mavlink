@@ -24,7 +24,6 @@
 "mavlink\stm32f1xx_hal_tim_ex.o"
 "mavlink\stm32f1xx_hal_uart.o"
 "mavlink\system_stm32f1xx.o"
-"mavlink\link.o"
 "mavlink\linkchassis.o"
 "mavlink\linkps2.o"
 "mavlink\ps2.o"
