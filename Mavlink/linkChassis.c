@@ -18,7 +18,7 @@ void executeCommand()
     // motor(PS2.LX, PS2.LY);
     // Debug
     char buf[50] = { 0 };
-    sprintf(buf, "LX,LY:%d,%d\n", PS2.LX, PS2.LY);
+    sprintf(buf, "LX,LY:%d,%d\n", PS2.Rocker_LX, PS2.Rocker_LY);
     HAL_UART_Transmit_DMA(DEBUG_UART, (uint8_t*)buf, sizeof(buf));
 }
 
@@ -39,7 +39,7 @@ void link_chassisStart(UART_HandleTypeDef* uart)
  * @param msg 消息内容
  * @retval none
  */
-void link_MsgRxCpltCallback(mavlink_message_t* msg)
+static inline void link_MsgRxCpltCallback(mavlink_message_t* msg)
 {
     switch (msg->msgid) {
     case 1:
