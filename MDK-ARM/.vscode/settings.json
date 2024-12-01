@@ -2,6 +2,7 @@
     "files.associations": {
         "link.h": "c",
         "linkchassis.h": "c",
-        "pid.h": "c"
+        "pid.h": "c",
+        "linkps2.h": "c"
     }
 }

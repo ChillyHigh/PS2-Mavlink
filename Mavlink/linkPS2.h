@@ -3,6 +3,7 @@
 
 #include "mavlink.h"
 #include "ps2.h"
+#include "gpio.h"
 
 void link_PS2Start(UART_HandleTypeDef* uart, TIM_HandleTypeDef* timer, PS2* ps2);
 void link_PS2Send(void);
